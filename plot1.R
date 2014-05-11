@@ -25,6 +25,7 @@ names(dataset) = names(dataset_names)
 rm(dataset_names)
 
 #Plot 1
+par(bg = "white")
 with(dataset, hist(Global_active_power, col = 'red', xlab = "Global Active Power (kilowatts)", main = "Global Active Power"))
 
 #Save plot

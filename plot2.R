@@ -28,6 +28,7 @@ rm(dataset_names)
 dataset$DateTime = strptime(paste(dataset$Date,dataset$Time), "%d/%m/%Y %H:%M:%S")
 
 #Plot 2
+par(bg = "white")
 with(dataset, plot(DateTime, Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)"))
 
 #Save plot

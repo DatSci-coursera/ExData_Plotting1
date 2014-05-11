@@ -33,6 +33,7 @@ png(file = "plot4.png", height = 480, width = 480)
 
 #Plot 4
 par(mfrow=c(2,2))
+par(bg = "white")
 
 #subplot 1
 with(dataset, plot(DateTime, Global_active_power, type = "l", ylab = "Global Active Power", xlab=""))
